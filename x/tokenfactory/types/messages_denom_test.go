@@ -71,7 +71,7 @@ func TestMsgUpdateDenom_ValidateBasic(t *testing.T) {
 	}
 }
 
-func TestMsgDeleteDenom_ValidateBasic(t *testing.T) {
+/* func TestMsgDeleteDenom_ValidateBasic(t *testing.T) {
 	tests := []struct {
 		name string
 		msg  MsgDeleteDenom
@@ -101,3 +101,4 @@ func TestMsgDeleteDenom_ValidateBasic(t *testing.T) {
 		})
 	}
 }
+*/

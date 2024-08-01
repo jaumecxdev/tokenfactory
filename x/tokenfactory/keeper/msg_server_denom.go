@@ -75,7 +75,7 @@ func (k msgServer) UpdateDenom(goCtx context.Context, msg *types.MsgUpdateDenom)
 	return &types.MsgUpdateDenomResponse{}, nil
 }
 
-func (k msgServer) DeleteDenom(goCtx context.Context, msg *types.MsgDeleteDenom) (*types.MsgDeleteDenomResponse, error) {
+/* func (k msgServer) DeleteDenom(goCtx context.Context, msg *types.MsgDeleteDenom) (*types.MsgDeleteDenomResponse, error) {
 	ctx := sdk.UnwrapSDKContext(goCtx)
 
 	// Check if the value exists
@@ -98,4 +98,4 @@ func (k msgServer) DeleteDenom(goCtx context.Context, msg *types.MsgDeleteDenom)
 	)
 
 	return &types.MsgDeleteDenomResponse{}, nil
-}
+} */

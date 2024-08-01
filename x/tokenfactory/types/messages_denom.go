@@ -76,7 +76,7 @@ func (msg *MsgUpdateDenom) ValidateBasic() error {
 	return nil
 }
 
-var _ sdk.Msg = &MsgDeleteDenom{}
+/* var _ sdk.Msg = &MsgDeleteDenom{}
 
 func NewMsgDeleteDenom(
 	owner string,
@@ -95,4 +95,4 @@ func (msg *MsgDeleteDenom) ValidateBasic() error {
 		return errorsmod.Wrapf(sdkerrors.ErrInvalidAddress, "invalid owner address (%s)", err)
 	}
 	return nil
-}
+} */

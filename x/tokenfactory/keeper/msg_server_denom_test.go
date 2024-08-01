@@ -87,7 +87,7 @@ func TestDenomMsgServerUpdate(t *testing.T) {
 	}
 }
 
-func TestDenomMsgServerDelete(t *testing.T) {
+/* func TestDenomMsgServerDelete(t *testing.T) {
 	owner := "A"
 
 	tests := []struct {
@@ -137,4 +137,4 @@ func TestDenomMsgServerDelete(t *testing.T) {
 			}
 		})
 	}
-}
+} */

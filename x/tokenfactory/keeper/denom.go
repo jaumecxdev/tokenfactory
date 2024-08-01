@@ -41,7 +41,7 @@ func (k Keeper) GetDenom(
 }
 
 // RemoveDenom removes a denom from the store
-func (k Keeper) RemoveDenom(
+/* func (k Keeper) RemoveDenom(
 	ctx context.Context,
 	denom string,
 
@@ -51,7 +51,7 @@ func (k Keeper) RemoveDenom(
 	store.Delete(types.DenomKey(
 		denom,
 	))
-}
+} */
 
 // GetAllDenom returns all denom
 func (k Keeper) GetAllDenom(ctx context.Context) (list []types.Denom) {
