@@ -41,22 +41,22 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 				},
 				{
 					RpcMethod:      "CreateDenom",
-					Use:            "create-denom [denom] [description] [ticker] [precision] [url] [maxSupply] [supply] [canChangeMaxSupply]",
+					Use:            "create-denom [denom] [description] [ticker] [precision] [url] [maxSupply] [canChangeMaxSupply]",
 					Short:          "Create a new Denom",
-					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "denom"}, {ProtoField: "description"}, {ProtoField: "ticker"}, {ProtoField: "precision"}, {ProtoField: "url"}, {ProtoField: "maxSupply"}, {ProtoField: "supply"}, {ProtoField: "canChangeMaxSupply"}},
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "denom"}, {ProtoField: "description"}, {ProtoField: "ticker"}, {ProtoField: "precision"}, {ProtoField: "url"}, {ProtoField: "maxSupply"} /* {ProtoField: "supply"}, */, {ProtoField: "canChangeMaxSupply"}},
 				},
 				{
 					RpcMethod:      "UpdateDenom",
-					Use:            "update-denom [denom] [description] [ticker] [precision] [url] [maxSupply] [supply] [canChangeMaxSupply]",
+					Use:            "update-denom [denom] [description] [url] [maxSupply] [canChangeMaxSupply]",
 					Short:          "Update Denom",
-					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "denom"}, {ProtoField: "description"}, {ProtoField: "ticker"}, {ProtoField: "precision"}, {ProtoField: "url"}, {ProtoField: "maxSupply"}, {ProtoField: "supply"}, {ProtoField: "canChangeMaxSupply"}},
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "denom"}, {ProtoField: "description"} /* {ProtoField: "ticker"}, {ProtoField: "precision"}, */, {ProtoField: "url"}, {ProtoField: "maxSupply"} /* {ProtoField: "supply"}, */, {ProtoField: "canChangeMaxSupply"}},
 				},
-				{
+				/* {
 					RpcMethod:      "DeleteDenom",
 					Use:            "delete-denom [denom]",
 					Short:          "Delete Denom",
 					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "denom"}},
-				},
+				}, */
 				{
 					RpcMethod:      "MintAndSendTokens",
 					Use:            "mint-and-send-tokens [denom] [amount] [recipient]",
